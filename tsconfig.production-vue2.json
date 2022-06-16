@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "template-name": [
+        "src/index"
+      ],
+      "template-name/*": [
+        "src/*"
+      ],
+      "vue": [
+        "node_modules/vue2/types/index"
+      ],
+    }
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "src/.vitepress/**",
+    "src/vite.config.ts",
+    "src/**/docs/**",
+  ]
+}
